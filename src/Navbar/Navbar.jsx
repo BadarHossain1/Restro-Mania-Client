@@ -1,9 +1,11 @@
+import { Link } from 'react-router-dom';
 import logo from '../assets/shop/logo.png'
 
 const Navbar = () => {
     const NavList = <>
-        <li><a>Submenu 1</a></li>
-        <li><a>Submenu 2</a></li>
+        <li><Link to='/'>Home</Link></li>
+        <li><Link to='/menu'>Menu</Link></li>
+        <li><Link to='/order'>Order</Link></li>
 
     </>
     return (
@@ -21,7 +23,7 @@ const Navbar = () => {
 
                     <div className='flex items-center justify-center border btn btn-ghost'>
                         <img src={logo} alt="" className='w-6' />
-                        <a className=" text-xl font-serif font-extrabold pt-2">Restro-Mania</a>
+                        <Link to='/' className=" text-xl font-serif font-extrabold pt-2">Restro-Mania</Link>
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
