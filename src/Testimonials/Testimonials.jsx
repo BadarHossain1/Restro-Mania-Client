@@ -10,14 +10,15 @@ import { Rating } from "@smastrom/react-rating";
 import '@smastrom/react-rating/style.css'
 import SectionTitle from "../Components/SectionTitle";
 import { Navigation } from "swiper/modules";
+import axios from "axios";
 
 
 const Testimonials = () => {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        fetch('reviews.json')
-            .then(res => res.json())
+        axios('http://localhost:5000/reviews')
+            .then(res => res.data)
             .then(data => setReviews(data))
     }, [])
 

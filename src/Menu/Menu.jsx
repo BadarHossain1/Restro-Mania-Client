@@ -27,31 +27,32 @@ const Menu = () => {
             </Helmet>
             <Hero img={img} title={"Our Offers"}></Hero>
             <SectionTitle subHeading={"Don't Miss"} heading={"Today's Offer"}></SectionTitle>
-            <MenuCategory items={offered}></MenuCategory>
+            <MenuCategory title={"offered"} items={offered}></MenuCategory>
+
 
             {/* dessert menu items */}
             <Hero img={dessert1} title={"Our Desserts"}> </Hero>
             <SectionTitle subHeading={"From 11.00am to 10.00pm"} heading={"Desserts"}></SectionTitle>
-            <MenuCategory items={dessert}></MenuCategory>
+            <MenuCategory title={"dessert"} items={dessert}></MenuCategory>
 
             {/* soup menu items */}
 
             <Hero img={soup1} title={"Our Soups"}></Hero>
             <SectionTitle subHeading={"From 11.00am to 10.00pm"} heading={"Soup"}></SectionTitle>
-            <MenuCategory items={soup}></MenuCategory>
+            <MenuCategory title={"soup"} items={soup}></MenuCategory>
+
 
             {/* salad menu items */}
 
             <Hero img={salad1} title={"Our Salads"}></Hero>
             <SectionTitle subHeading={"From 11.00am to 10.00pm"} heading={"Salad"}></SectionTitle>
-            <MenuCategory items={salad}></MenuCategory>
-
+            <MenuCategory title={"salad"} items={salad}></MenuCategory>
             {/* pizza menu items */}
 
             <Hero img={pizza1} title={"Our Pizzas"}></Hero>
             <SectionTitle subHeading={"From 11.00am to 10.00pm"} heading={"Pizza"}></SectionTitle>
-            <MenuCategory items={pizza}></MenuCategory>
-            
+            <MenuCategory title={"pizza"} items={pizza}></MenuCategory>
+
 
 
 
